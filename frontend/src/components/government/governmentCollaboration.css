@@ -1,0 +1,96 @@
+.government-collaboration {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto; /* Center the entire grid container */
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px 20px; /* Add padding to maintain some spacing around the grid */
+    background: linear-gradient(to bottom,#001f3f,  #000);
+  }
+  
+  .gov {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 180px; /* Automatically adjust the left margin */
+    margin-right: auto; /* Automatically adjust the right margin */
+    gap: 150px;
+
+  }
+  
+  .gov-image-block {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 150px;
+    height: 150px;
+  }
+  
+  .gov-image-block img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 1200px) {
+    .gov-image-block {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .government-collaboration {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .gov {
+      gap: 100px; /* Adjust gap for smaller screens */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .gov-image-block {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .government-collaboration {
+      grid-template-columns: 1fr;
+    }
+  
+    .gov {
+      gap: 50px; /* Adjust gap for smaller screens */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .gov-image-block {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .gov {
+      gap: 20px; /* Adjust gap for smaller screens */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .gov-image-block {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

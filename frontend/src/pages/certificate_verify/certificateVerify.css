@@ -1,0 +1,89 @@
+.certificate-verify-container {
+    background: linear-gradient(to bottom, #001f3f, #000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 0px;
+    background-color: #f7fafd;
+    margin-bottom: 20px;
+  }
+  
+  .verify-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .verify-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   
+    max-width: 400px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .verify-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .verify-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .verify-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+    .verify-heading {
+      font-size: 1.5rem;
+    }
+  
+    .verify-box {
+      padding: 15px;
+    }
+  
+    .verify-input, .verify-button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .verify-heading {
+      font-size: 1.2rem;
+    }
+  
+    .verify-box {
+      padding: 10px;
+    }
+  
+    .verify-input, .verify-button {
+      font-size: 0.8rem;
+    }
+  }
+  

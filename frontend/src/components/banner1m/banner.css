@@ -1,0 +1,49 @@
+/* banner.css */
+.banner {
+  display: flex;
+  background: linear-gradient(to right, #001f3f, #000);
+  color: #ffffff;
+  padding: 40px;
+  
+  margin: 40px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow for depth */
+}
+
+.banner-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+.banner-count {
+  font-size: 6em; /* Large font size for the count */
+  margin: 0;
+  
+}
+
+.banner-text {
+  margin: 0;
+  font-size: 1.5em; /* Font size for the text */
+}
+
+.banner-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px; /* Space between left and right sections */
+  margin-left: 30px;
+}
+
+.banner-subtitle {
+  font-size: 3em; /* Larger font size for the subtitle */
+  margin: 0;
+}
+
+.banner-description {
+  margin: 20px 0 0 0;
+  font-size: 1.2em; /* Font size for the description */
+  line-height: 1.6;
+}

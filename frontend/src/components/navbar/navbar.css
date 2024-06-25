@@ -1,0 +1,139 @@
+.navbar {
+    z-index: 1;
+    background-color: #ffffff; /* White background */
+    padding: 1em 2.5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to bottom, #000, #001f3f 0%);
+}
+
+.nav-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 80rem;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+}
+
+.nav-main_logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-main_logo {
+    height: 50px; /* Adjust as necessary */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #007bff;
+}
+
+.logo-text h1 {
+    margin: 0;
+    line-height: 1;
+    font-size: 1.25rem;
+}
+
+.logo-text .line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff; /* Line color */
+    margin: 5px 0; /* Space between the text and the line */
+}
+
+.nav-menu {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+.nav-main_link {
+    margin: 0 15px; /* Adjust as necessary */
+    text-decoration: none;
+    color: #ffffff; /* Black color for links */
+    display: flex;
+    align-items: center;
+}
+
+.nav-main_link:hover,
+.nav-main_link.active {
+    color: #edda07; /* Highlight color for the active page and hover */
+}
+
+.nav-main_button {
+    margin: 0 15px; /* Adjust as necessary */
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff; /* Blue color for button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-main_button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.text-block {
+    font-size: 16px; /* Adjust as necessary */
+}
+
+.nav-main_menu-mobile-button {
+    display: none; /* Hide by default, show in responsive view */
+}
+
+.nav-main_menu-mobile-icon {
+    height: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-main_menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff; /* White background for mobile */
+        position: absolute;
+        top: 60px; /* Adjust as necessary */
+        left: 0;
+        border-top: 1px solid #ddd;
+        padding: 10px 0;
+    }
+
+    .nav-main_menu-mobile-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 40px;
+        background-color: #007bff; /* Blue background for button */
+        border-radius: 5px;
+    }
+
+    .nav-main_menu-mobile-icon {
+        height: 24px;
+        fill: #fff; /* White icon color */
+    }
+
+    .nav-main_component {
+        flex-direction: column;
+    }
+
+    .nav-main_component.open .nav-main_menu {
+        display: flex;
+    }
+
+    .nav-main_link {
+        margin: 10px 0;
+        justify-content: center;
+    }
+}

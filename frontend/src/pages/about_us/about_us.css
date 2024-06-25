@@ -1,0 +1,115 @@
+.about-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #f7fafd;
+  background: linear-gradient(to bottom, #001f3f, #000);
+}
+
+.about-content {
+  flex: 1;
+  padding-right: 20px;
+  max-width: 60%;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about-subheading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about-quotation {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #999;
+  margin-top: 20px;
+}
+
+.earth-animation {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.earth-animation {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bounce s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
+.earth-img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 50%; /* Optional: If your image is circular or needs rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for visual effect */
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  .about-us-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-content {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .earth-animation {
+    order: -1;
+  }
+
+  .earth-img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-subheading {
+    font-size: 1.2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about-quotation {
+    font-size: 1rem;
+  }
+}

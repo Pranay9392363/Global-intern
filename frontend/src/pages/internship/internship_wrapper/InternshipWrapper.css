@@ -1,0 +1,38 @@
+/* InternshipWrapper.css */
+
+.internship-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust as needed */
+    background: linear-gradient(to bottom, #001f3f, #000);
+  }
+  
+  .category {
+    width: 500px; /* Set a fixed width for each category */
+    margin: 20px;
+  }
+  
+  .category-link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #007bff; /* Adjust link color */
+    padding: 10px 20px;
+    border: 2px solid #007bff; /* Adjust border color */
+    border-radius: 5px;
+    text-align: center; /* Center align text */
+    transition: all 0.3s ease;
+  }
+  
+  .category-link:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .category-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3); /* Adjust focus style */
+  }
+  
